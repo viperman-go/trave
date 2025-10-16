@@ -9,7 +9,6 @@
     "start": "next start",
     "predeploy": " npm run build",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
     "next": "15.5.5",
