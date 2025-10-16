@@ -2,20 +2,25 @@
   "name": "trave",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/viperman-go/trave",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": " npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
+    "next": "15.5.5",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.5"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
-    "@types/react-dom": "^19"
+    "@types/react-dom": "^19",
+    "gh-pages": "^6.3.0",
+    "typescript": "^5"
   }
 }
